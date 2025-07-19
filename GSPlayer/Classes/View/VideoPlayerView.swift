@@ -298,7 +298,7 @@ private extension VideoPlayerView {
     
     func configureInit() {
         
-        isHidden = true
+        // isHidden = true
         
         NotificationCenter.default.addObserver(
             self,
@@ -316,10 +316,10 @@ private extension VideoPlayerView {
             return
         }
         
-        switch state {
-        case .playing, .paused: isHidden = false
-        default:                isHidden = true
-        }
+        // switch state {
+        // case .playing, .paused: isHidden = false
+        // default:                isHidden = true
+        // }
         
         stateDidChanged?(state)
     }
